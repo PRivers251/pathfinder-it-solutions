@@ -1,0 +1,68 @@
+
+.header-container {
+    @apply bg-white flex px-5 justify-between items-center;
+    height: 7rem;
+    width: 100vw;
+}
+
+.logo-container img {
+    width:20vw;
+}
+
+
+/* Nav Menu */
+.main-site-nav-menu {
+    @apply hidden text-center justify-around items-center relative;
+    width: 30rem;
+    height: 100%;
+}
+
+.main-site-nav-menu ul {
+    @apply flex-col justify-around;
+    width:auto;
+}
+
+.main-site-nav-menu li {
+    @apply px-2 justify-center;
+}
+
+/* Mobile Nav Button */
+
+.mobile-nav-menu-button-container {
+    @apply flex items-center mr-10;
+}
+
+.mobile-nav-menu-button {
+    @apply grid p-2 border shadow-md rounded-lg place-items-center;
+
+}
+
+.mobile-nav-menu-button div {
+    @apply bg-black mx-auto p-0 m-0;
+    height: 2px;
+    width: 40px;
+}
+
+.mobile-nav-menu-button div:nth-child(2) {
+    @apply my-3
+}
+
+@media (min-width: 1000px){
+    .main-site-nav-menu {
+        @apply flex;
+        min-width: 30%;
+    }
+
+    .main-site-nav-menu ul {
+        @apply flex-row;
+        min-width: 100%;
+    }
+
+    .main-site-nav-menu ul li {
+        width: auto;
+    }
+
+    .mobile-nav-menu-button {
+        @apply hidden;
+    }
+}

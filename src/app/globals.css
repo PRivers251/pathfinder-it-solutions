@@ -3,19 +3,25 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #bacca162;
+  --foreground: black;
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  /* background: linear-gradient(90deg, rgba(235,237,238,1) 48%, rgba(253,251,251,1) 100%); */
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url('/images/Base-SpringleafBackground.svg');
+  min-height: 500vh;
+  background-size:auto;
+  background-repeat:repeat-y;
+  background-position:20%;
+  /* @apply bg-left bg-cover bg-no-repeat; */
 }
+
+/* Potential Gradient Colors */
+/* 
+  #e0eafc → #cfdef3 
+  
+  #fdfbfb → #ebedee
+  */
