@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import Head from "next/head";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -20,11 +21,24 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+      <title>Pathfinder It Solutions | Tech Support for Citronelle & Saraland</title>
+        <meta
+          name="description"
+          content="Fast, reliable tech support for small businesses in Citronelle and Saraland. Get a FREE 15-minute checkup to fix your tech problems today!"
+        />
+        <meta name="keywords" content="tech support, IT services, Citronelle, Saraland, small business" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charSet="UTF-8" />
+        <link rel="icon" href="/favicon.ico" />
+        <script src="https://kit.fontawesome.com/b1350789d4.js" crossorigin="anonymous"></script>
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
+      
     </html>
   );
 }

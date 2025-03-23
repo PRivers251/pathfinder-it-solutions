@@ -1,0 +1,27 @@
+
+body {
+    background-image: url('/images/PathFinderHeroGraphic3.png');
+    background-size: cover;
+    background-position-x: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.home-page {
+    align-self: center;
+}
+
+@media (max-width: 560px) {
+    .home-page {
+        background-position-x: center;
+    }
+}
+
+.home-page-overlay {
+    background-color: rgba(255, 255, 255, 0.575);
+    position: absolute;
+    z-index: 10;
+    min-height: 100%;
+    width: 100%;
+    background-size: cover;
+}
